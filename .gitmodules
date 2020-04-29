@@ -1,3 +1,6 @@
 [submodule "basketball"]
 	path = basketball
 	url = https://github.com/klein20/basketball.git
+[submodule "new-year"]
+	path = new-year
+	url = https://github.com/klein20/new-year.git

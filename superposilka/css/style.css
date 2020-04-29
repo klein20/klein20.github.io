@@ -1,0 +1,498 @@
+body { margin: 0; color: black; font: normal 18px/20px  Arial, "Times New Roman", sans-serif; background: #fff;}
+.clear { clear: both;}
+p { margin: 0; padding: 0;}
+a { color: #0000ff; text-decoration: none;}
+a img { border: none;}
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; font-weight: bold; color: #000;}
+h1 { padding: 0px 0 0px; line-height: 1.4em;}
+h2 { padding: 0 0 12px;}
+strong { font-weight: bold;}
+em { font-style: italic;}
+form, menu, iframe { display: block; margin: 0; padding: 0; border: none;}
+ol, ul, dl, li, dt, dd { margin: 0; padding: 0; list-style-type: none; }
+* { outline: none; box-sizing: border-box;}
+
+@font-face {
+	font-family: "Lucida Console";
+	src: url(../fonts/Lucida Console.ttf);
+}
+.resize {
+	margin: 0 auto;
+	width: 958px;
+}
+.clr:after { 
+	content: "";
+	 display: block; 
+	 clear: both;
+}
+.logo {
+	float: left;
+	margin-top: 16px;
+}
+.log-in {
+	float: right;
+	background-color: #0073bb;
+	border-radius: 2px;
+}
+.log-in p {
+	font-size: 11px;
+	color: white;
+	padding: 11px 16px 12px 14px;
+}
+.log-in img {
+	vertical-align: middle;
+}
+.log-in a {
+	color: white;
+}
+.log-in a:not(:last-child):hover {
+	border-bottom: 1px solid white;
+}
+.contacts {
+	float: right;
+	margin-top: 15px;
+	margin-left: 50px;
+}
+.telephone {
+	font-family: "PT Sans";
+	padding-right: 20px;
+}
+.telephone a {
+	font-size: 30px;
+	color: #424242;	
+}
+.telephone span {
+	font-weight: 700;
+}
+.telephone img {
+	padding-right: 10px;
+}
+.mail {
+	text-align: right;
+	padding-right: 20px;
+}
+.mail a {
+	font-size: 11px;
+	color: #0073bb;
+}
+.telephone_and_mail {
+	border-right: 1px solid #f4f4f4;
+	float: left;
+}
+.social {
+	float: right;
+}
+.social p {
+	font-size: 12px;
+}
+.social img {
+	padding: 0 9px 0 20px;
+}
+.main-menu {
+	margin-top: 37px;
+	border-top: 1px solid #0092cd;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.main-menu ul {
+	display: flex;
+	justify-content: space-around;
+	background: linear-gradient(to bottom, #0092cd, #0075bc);
+	padding: 11px 0 17px 0;
+	border-top: 1px solid #26a2d4;
+}
+.main-menu li:not(:first-child):before {
+	content: '\2022'; 
+    padding-right: 20px; 
+    color: white;
+}
+.main-menu li:hover a {
+	border-bottom: 1px solid white;
+}
+.main-menu li {
+	color: white;
+}
+.main-menu a {
+	font-family: "PT Sans";
+	font-size: 14px;
+	color: white;
+	text-transform: uppercase;
+}
+.main {
+	box-shadow: 0 -5px 9px -2px #e5e5e5;
+}
+.slider {
+	background: url(../images/main_slider.jpg) no-repeat center;
+	height: 390px;
+}
+.adv_text {
+	text-align: center;
+}
+.adv_text h2 {
+	font-size: 18px;
+	font-weight: 400;
+}
+.adv_text p {
+	font-size: 12px;
+	color: #a6a6a6;
+}
+.advantages ul {
+	margin: 70px 0 80px 0;
+	display: flex;
+	justify-content: space-around;
+}
+.img_center {
+	text-align: center;
+}
+.advantages li {
+	width: 250px;
+}
+.button {
+	text-align: center;
+}
+.button img {
+	margin-bottom: -5px;
+}
+.button span {
+	float: right;
+	color: #0073bb;
+	font-size: 11px;
+	margin-top: -40px;
+}
+.button a {
+	color: #0073bb;
+}
+.button span a:hover {
+	border-bottom: 1px solid #0073bb;
+}
+.shops {
+	background: linear-gradient(180deg, rgba(248,252,255,1) 30%, rgba(246,252,255,1) 100%);
+	border-top: 1px solid #ebeff2;
+	border-bottom: 1px solid #ebeff2;
+	margin-bottom: 30px;
+	position: relative;
+}
+.arrow_left, .arrow_right  {
+	background: #c8e3f3;
+	position: absolute;
+	border-radius: 2px;
+	padding: 11px 17px 10px 17px;
+	cursor: pointer;
+}
+.arrow_left:hover, .arrow_right:hover {
+	background: #98c9e7;
+}
+.arrow_left {
+	top: 130px;
+	left: 130px;
+}
+.arrow_right {
+	top: 130px;
+	right: 130px;
+}
+.first_row {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+}
+.second_row {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0 30px 0;
+}
+.first_row li, .second_row li {
+	padding: 28px 11px 23px 10px;
+	background: white;
+	border-radius: 3px;
+	border-left: 1px solid #f1f5f8;
+	border-bottom: 1px solid #f1f5f8;
+}
+.reviews {
+	
+}
+.reviews h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 36px;
+	font-family: "PT Sans";
+	font-weight: 700;
+	color: #424242;
+	padding: 70px 0;
+}
+.reviews h2:before {
+	content: "";
+}
+.reviews ul {
+	display: flex;
+	justify-content: space-between;
+}
+.reviews li {
+	width: 220px;
+}
+.reviews p {
+	font-size: 12px;
+	color: #a6a6a6;
+	padding-bottom: 10px;
+}
+.reviews h3 {
+	font-size: 18px;
+	color: #424242;
+	padding-bottom: 11px;
+}
+.reviews span {
+	font-size: 10px;
+	color: #c8c7c7;
+}
+.button_show_all {
+	text-align: center;
+	padding: 20px 0 40px 0;
+}
+.button_show_all input[type="button"] {
+	font-size: 11px;
+	color: #0073bb;
+	background: #e6f2f9;
+	border: none;
+	cursor: pointer;
+	padding: 4px;
+}
+.payment_and_fb {
+	background: linear-gradient(180deg, rgba(248,252,255,1) 30%, rgba(246,252,255,1) 100%);
+	border-top: 1px solid #f5f8fa;
+	
+	padding-top: 37px;
+}
+.payment {
+	float: left;
+	width: 40%;
+	margin-right: 20px;
+}
+.payment h2 {
+	font-size: 36px;
+	color: #424242;
+	text-transform: uppercase;
+	font-family: "PT Sans";
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.payment ul {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.fb {
+	border-top: 1px solid #3563a4;
+	border-right: 1px solid #b6b6b6;
+	border-bottom: 1px solid #b6b6b6;
+	border-left: 1px solid #b6b6b6;
+	width: 52%;
+	float: right;
+	background: white;
+}
+.fb_header {
+	padding: 17px 26px 14px 41px;
+	border-bottom: 1px solid #e7effb;
+}
+.fb_header:firts-child img {
+	padding-right: 18px;
+}
+.fb_header a {
+	color: #3f5fb9;
+}
+.fb_header p {
+	font-family: "Lucida Console";
+	font-size: 15px;
+	line-height: 18px;
+}
+.fb_header span {
+	font-family: "Lucida Console";
+	font-size: 11px;
+	color: #c2c2c2;
+	line-height: 12px;
+}
+.fb_header_text {
+	display: inline-block;
+}
+.like {
+	width: 70px;
+	border: 1px solid #d8e3f8;
+	border-radius: 2px;
+	float: right;
+	cursor: pointer;
+	padding: 2px 0;
+}
+.like span {
+	display: inline-block;
+	font-family: "Lucida Console";
+	font-size: 15px;
+	color: #3f5fb9;
+}
+.like img {
+	vertical-align: middle;
+	padding-left: 4px;
+}
+.fb_main {
+	padding: 25px 30px 22px 37px;
+	border-bottom: 1px solid #dbdbdb;
+}
+.fb_main p {
+	color: #373737;
+	font-size: 13px;
+	padding-bottom: 5px;
+}
+.fb_main ul {
+	display: flex;
+	justify-content: space-between;
+}
+.fb_footer {
+	padding: 5px 0 6px 37px;
+}
+.fb_footer img {
+	vertical-align: middle;
+	margin-bottom: 2px;
+}
+.fb_footer p {
+	font-size: 11px;
+}
+.fb_footer a {
+	color: #898989;
+}
+.all_payments {
+	font-size: 11px;
+	margin: 5px 0 20px 0;
+}
+.all_payments a {
+	color: #0073bb;
+}
+.all_payments a:hover {
+	border-bottom: 1px solid #5192c9;
+}
+.black_line {
+	background: #242424;
+}
+.black_line ul {
+	width: 68%;
+	display: flex;
+	justify-content: space-between;
+	padding: 24px 0 26px 0;
+	float: left;
+}
+.black_line a {
+	color: white;
+}
+.black_line li:not(:first-child):before {
+	content: '\2022'; 
+    padding-right: 7px; 
+    color: white;
+}
+.black_line li {
+	font-size: 12px;
+	font-family: "PT Sans";
+	text-transform: uppercase;
+}
+.black_line li a:hover {
+	border-bottom: 1px solid #aaaaaa;
+}
+.logo_footer {
+	float: right;
+	padding-top: 24px;
+}
+.company_opportunities {
+	width: 275px;
+	display: inline-block;
+}
+.contacts_line {
+	background: #2e2e2e;
+	padding: 50px 0;
+}
+.contacts_line h3 {
+	font-size: 14px;
+	font-family: "PT Sans";
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+}
+.contacts_line p {
+	font-size: 11px;
+	color: #acacac;
+}
+.footer_contacts {
+	width: 160px;
+	display: inline-block;
+	margin-left: 50px;
+}
+.footer_contacts span {
+	font-size: 18px;
+	font-family: "PT Sans";
+	font-weight: bold;
+	color: #acacac;
+}
+.footer_social {
+	width: 410px;
+	float: right;
+}
+.footer_social ul {
+	display: flex;
+	justify-content: space-between;
+}
+.footer_social p {
+	text-align: right;
+}
+.slider .resize {
+	position: relative;
+
+}
+.slider_text {
+	width: 440px;
+	position: absolute;
+	top: 180px;
+	left: 42px;
+}
+.slider_text h3 {
+	font-family: "PT Sans";
+	font-weight: bold;
+	font-size: 49px;
+	text-transform: uppercase;
+	color: white;
+	line-height: 1.2em;
+}
+.slider_text p {
+	font-size: 14px;
+	color: white;
+}
+.slider_text span {
+	font-size: 11px;
+}
+.slider_text span a {
+	color: #ffdf50;
+	border-bottom: 1px solid #ffdf50;
+}
+.consultant {
+	top: 550px;
+}
+.calculator {
+	top: 800px;
+}
+.consultant, .calculator {
+	position: absolute;
+	left: -80px;
+	background: linear-gradient(to left, #1896dc, #0378c0);
+	transform: rotate(270deg);
+	padding: 12px 14px 13px 9px;
+	border-radius: 4px;
+	border-right: 3px solid #ffcc00;
+	border-left: 3px solid #0069aa;
+	cursor: pointer;
+}
+.consultant img, .calculator img {
+	vertical-align: middle;
+	padding-right: 5px;
+}
+.consultant p, .calculator p {
+	color: white;
+	font-size: 16px;
+}
+.consultant a, .calculator a {
+	color: white;
+}
+
+

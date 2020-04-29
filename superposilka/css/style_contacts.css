@@ -1,0 +1,351 @@
+body { margin: 0; color: black; font: normal 18px/20px  Arial, "Times New Roman", sans-serif; background: #fff;}
+.clear { clear: both;}
+p { margin: 0; padding: 0;}
+a { color: #0000ff; text-decoration: none;}
+a img { border: none;}
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; font-weight: bold; color: #000;}
+h1 { padding: 0px 0 0px; line-height: 1.4em;}
+h2 { padding: 0 0 12px;}
+strong { font-weight: bold;}
+em { font-style: italic;}
+form, menu, iframe { display: block; margin: 0; padding: 0; border: none;}
+ol, ul, dl, li, dt, dd { margin: 0; padding: 0; list-style-type: none; }
+* { outline: none; box-sizing: border-box;}
+
+@font-face {
+	font-family: "Lucida Console";
+	src: url(../fonts/Lucida Console.ttf);
+}
+@font-face {
+	font-family: "Tahoma";
+	src: url(../fonts/Tahoma.ttf);
+}
+.resize {
+	margin: 0 auto;
+	width: 958px;
+}
+.clr:after { 
+	content: "";
+	 display: block; 
+	 clear: both;
+}
+.logo {
+	float: left;
+	margin-top: 16px;
+}
+.log-in {
+	float: right;
+	background-color: #0073bb;
+	border-radius: 2px;
+}
+.log-in p {
+	font-size: 11px;
+	color: white;
+	padding: 11px 16px 12px 14px;
+}
+.log-in img {
+	vertical-align: middle;
+}
+.log-in a {
+	color: white;
+}
+.log-in a:not(:last-child):hover {
+	border-bottom: 1px solid white;
+}
+.contacts {
+	float: right;
+	margin-top: 15px;
+	margin-left: 50px;
+}
+.telephone {
+	font-family: "PT Sans";
+	padding-right: 20px;
+}
+.telephone a {
+	font-size: 30px;
+	color: #424242;	
+}
+.telephone span {
+	font-weight: 700;
+}
+.telephone img {
+	padding-right: 10px;
+}
+.mail {
+	text-align: right;
+	padding-right: 20px;
+}
+.mail a {
+	font-size: 11px;
+	color: #0073bb;
+}
+.telephone_and_mail {
+	border-right: 1px solid #f4f4f4;
+	float: left;
+}
+.social {
+	float: right;
+}
+.social p {
+	font-size: 12px;
+}
+.social img {
+	padding: 0 9px 0 20px;
+}
+.main-menu {
+	margin-top: 37px;
+	border-top: 1px solid #0092cd;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.main-menu ul {
+	display: flex;
+	justify-content: space-around;
+	background: linear-gradient(to bottom, #0092cd, #0075bc);
+	padding: 11px 0 17px 0;
+	border-top: 1px solid #26a2d4;
+}
+.main-menu li:not(:first-child):before {
+	content: '\2022'; 
+    padding-right: 20px; 
+    color: white;
+}
+.main-menu li:hover a {
+	border-bottom: 1px solid white;
+}
+.main-menu li {
+	color: white;
+}
+.main-menu a {
+	font-family: "PT Sans";
+	font-size: 14px;
+	color: white;
+	text-transform: uppercase;
+}
+.main {
+	box-shadow: 0 -5px 9px -2px #e5e5e5;
+	padding-bottom: 250px;
+}
+.main h2 {
+	font-family: "PT Sans";
+	font-weight: 700;
+	font-size: 36px;
+	color: #424242;
+	text-transform: uppercase;
+	padding: 50px 45px 50px 0;
+}
+.text_contacts {
+	float: left;
+	width: 410px;
+}
+.text_contacts p {
+	font-size: 12px;
+	line-height: 18px;
+	color: #424242;
+	padding-bottom: 35px;
+}
+.text_contacts table {
+	border: none;
+}
+.contact_wrap {
+	display: inline-block;
+}
+.contacts_form {
+	float: right;
+	width: 420px;
+	margin-right: 70px;
+}
+.contacts_form h3 {
+	font-family: "PT Sans";
+	font-weight: 700;
+	font-size: 22px;
+	color: #333333;
+	padding-bottom: 20px;
+}
+.contacts_form input[type="text"] {
+	font-size: 12px;
+	color: #a5a5a5;
+	border-radius: 2px;
+	border: 1px solid #ddddd4;
+	padding: 10px 0 13px 14px;
+	width: 49%;
+	display: inline-block;
+}
+.contacts_form p {
+	font-size: 11px;
+	font-family: Tahoma;
+	color: #a5a5a5;
+	padding-bottom: 10px;
+	cursor: pointer;
+}
+.contacts_form textarea {
+	width: 99%;
+	height: 130px;
+	font-size: 12px;
+	color: #a5a5a5;
+	border-radius: 2px;
+	border: 1px solid #ddddd4;
+	padding: 10px 0 13px 14px;
+	resize: vertical;
+}
+.contacts_form input[type="button"] {
+	background: linear-gradient(to bottom, #1897dc, #0479c0);
+	border-top: 1px solid #1897dc;
+	border-right: 1px solid #1897dc;
+	border-left: 1px solid #1897dc;
+	border-bottom: 3px solid #0069aa;
+	border-radius: 3px;
+	padding: 13px 19px 10px 23px;
+	color: white;
+	font-size: 12px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+.contacts_form input[type="button"]:after {
+	content: "";
+	border-bottom: 1px solid #298cc9;
+}
+.mail a {
+	color: #0073bb !important;
+}
+.pad {
+	padding-left: 20px;
+}
+.contact_wrap span {
+	font-size: 12px;
+	color: #a5a5a5;
+}
+.contact_wrap p a {
+	font-size: 20px;
+	color: #424242;
+}
+.black_line {
+	background: #242424;
+}
+.black_line ul {
+	width: 68%;
+	display: flex;
+	justify-content: space-between;
+	padding: 24px 0 26px 0;
+	float: left;
+}
+.black_line a {
+	color: white;
+}
+.black_line li:not(:first-child):before {
+	content: '\2022'; 
+    padding-right: 7px; 
+    color: white;
+}
+.black_line li {
+	font-size: 12px;
+	font-family: "PT Sans";
+	text-transform: uppercase;
+}
+.black_line li a:hover {
+	border-bottom: 1px solid #aaaaaa;
+}
+.logo_footer {
+	float: right;
+	padding-top: 24px;
+}
+.company_opportunities {
+	width: 275px;
+	display: inline-block;
+}
+.contacts_line {
+	background: #2e2e2e;
+	padding: 50px 0;
+}
+.contacts_line h3 {
+	font-size: 14px;
+	font-family: "PT Sans";
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+}
+.contacts_line p {
+	font-size: 11px;
+	color: #acacac;
+}
+.footer_contacts {
+	width: 160px;
+	display: inline-block;
+	margin-left: 50px;
+}
+.footer_contacts span {
+	font-size: 18px;
+	font-family: "PT Sans";
+	font-weight: bold;
+	color: #acacac;
+}
+.footer_social {
+	width: 410px;
+	float: right;
+}
+.footer_social ul {
+	display: flex;
+	justify-content: space-between;
+}
+.footer_social p {
+	text-align: right;
+}
+.slider .resize {
+	position: relative;
+
+}
+.slider_text {
+	width: 440px;
+	position: absolute;
+	top: 180px;
+	left: 42px;
+}
+.slider_text h3 {
+	font-family: "PT Sans";
+	font-weight: bold;
+	font-size: 49px;
+	text-transform: uppercase;
+	color: white;
+	line-height: 1.2em;
+}
+.slider_text p {
+	font-size: 14px;
+	color: white;
+}
+.slider_text span {
+	font-size: 11px;
+}
+.slider_text span a {
+	color: #ffdf50;
+	border-bottom: 1px solid #ffdf50;
+}
+.consultant {
+	top: 320px;
+}
+.calculator {
+	top: 570px;
+}
+.consultant, .calculator {
+	position: absolute;
+	left: -80px;
+	background: linear-gradient(to left, #1896dc, #0378c0);
+	transform: rotate(270deg);
+	padding: 12px 14px 13px 9px;
+	border-radius: 4px;
+	border-right: 3px solid #ffcc00;
+	border-left: 3px solid #0069aa;
+	cursor: pointer;
+}
+.consultant img, .calculator img {
+	vertical-align: middle;
+	padding-right: 5px;
+}
+.consultant p, .calculator p {
+	color: white;
+	font-size: 16px;
+}
+.consultant a, .calculator a {
+	color: white;
+}
+
+
