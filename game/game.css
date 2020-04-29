@@ -1,0 +1,35 @@
+button {
+	width: 60px;
+	cursor: pointer;
+}
+button:hover {
+	box-shadow: 0 0 5px #0006;
+}
+
+#maze {
+	margin-bottom: 20px;
+	font-size: 0;
+	line-height: 0;
+}
+#maze p {
+	margin: 0;
+}
+#maze span {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	border: 1px solid silver;
+}
+#maze span.wall {
+	background: silver;
+}
+#maze span.hero,
+#maze span.chest {
+	background: no-repeat center center / 24px;
+}
+#maze span.chest {
+	background-image: url(зображення_viber_2019-12-19_19-54-52.jpg);
+}
+#maze span.hero {
+	background-image: url(зображення_viber_2019-12-19_19-59-07.jpg);
+}
